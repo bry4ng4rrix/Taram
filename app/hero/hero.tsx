@@ -1,11 +1,11 @@
-import {Card , CardContent} from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { BiCalendar } from "react-icons/bi";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import { BiCalendar } from "react-icons/bi";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
-const hero = () => {
+export default function ErrorPage() {
   return (
-   <div className=" w-full bg-stone-950 flex flex-col items-center mt-10  h-[calc(100vh-5rem)]  border-b border-[#6FE0B3]/30">
+    <div className=" w-full bg-stone-950 flex flex-col items-center mt-10  h-[calc(100vh-5rem)]  border-b border-[#6FE0B3]/30">
       {/* Search bar at the top */}
       <div className=" w-full max-w-2xl ">
         <Card className="rounded-full h-24 px-4 items-center shadow-[0_0_20px_5px_rgba(111,224,179,0.3)] hover:shadow-[0_0_25px_8px_rgba(111,224,179,0.4)] transition-all duration-300 border border-[#6FE0B3]/30 hover:border-[#6FE0B3]/50">
@@ -20,7 +20,7 @@ const hero = () => {
 
       {/* Main content */}
       <div className="max-w-3xl mt-5  mx-auto text-center space-y-8">
-        <h1 className="text-7xl md:text-7xl font-bold text-white leading-tight">
+        <h1 className="text-7xl md:text-6xl font-bold text-white leading-tight">
           Votre <span className="text-[#6FE0B3]">site</span> doit{" "}
           <span className="text-[#6FE0B3]">donner</span>
           <br />
@@ -61,7 +61,5 @@ const hero = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default hero
